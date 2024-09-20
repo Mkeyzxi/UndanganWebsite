@@ -23,8 +23,9 @@ const clickSambutan = document.getElementById('sambutanClick').addEventListener(
 	sambutan.classList.add('hidden');
 	duaSambutan.classList.add('block');
 	duaSambutan.classList.remove('hidden')
-	
+	AOS.refresh();
     toggleAudio();
+    
 
 });
 
