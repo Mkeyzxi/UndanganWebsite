@@ -1,0 +1,23 @@
+:root{
+	--white: #FCFEFD;
+	--whiteTransparan: rgba(252, 254, 253,.4);
+	--blackTransparan: rgba(0, 255, 149, 0.1);
+	--green: #B0FFCE;
+	--black: #2D2F2E;
+	--orange: #EDC821;
+}
+
+.custom-font {
+	font-family: 'Playwrite CU', sans-serif;
+}
+
+
+.poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.shadow-top {
+	box-shadow: 0 -20px 100px 50px var(--white);
+}

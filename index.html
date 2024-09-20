@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<!-- tailwind config -->
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						clifford: '#da373d',
+					}
+				}
+			}
+		}
+	</script>
+
+	<!-- simplyCountdown -->
+	<link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+	<script src="countdown/simplyCountdown.min.js"></script>
+
+	<script></script>
+	<title>Document</title>
+</head>
+
+<body class="poppins-reguler text-[var(--black)]">
+	<div class="">
+		<div id="sambutan" class=" acara flex flex-wrap justify-center items-center flex-col gap-3 h-[100vh] bg-[url(image/background.jpg)] bg-no-repeat bg-cover ">
+			<div class="">
+				<div class="w-[220px] lg:w-[480px] lg:top-[-32px] absolute left-0">
+					<img src="image/flower-back-2.png" width="100%"  alt="">
+				</div>
+				<div class="w-[220px] lg:w-[480px] lg:top-[-32px] absolute right-0">
+					<img src="image/flower-back.png" width="100%"  alt="">
+				</div>
+			</div>
+			<div id="" class="md:border-4 border-[var(--green)] md:border-splid md:p-3  ">
+				
+				<div class="lg:w-[400px] lg:h-[60%] md:h-[70%] md:w-[400px] md:border-[var(--whiteTransparan)] md:top-[17%] lg:top-[45%] md:ml-[-2.2%] lg:mt-[-11%] lg:ml-[-1.2%] rotate-[-7deg] z-10 lg:border-[var(--whiteTransparan)] md:border-4 md:border-solid md:p-3 md:absolute z-10"></div>
+				<div class="p-6 flex flex-wrap justify-center text-center items-center flex-col gap-5 md:gap-6 h-1/1 relative z-20">
+					<h4 class="text-lg sm:text-xl md:text-2xl font-light ">you are invited to out wedding</h4>
+					<h1 class="custom-font text-2xl sm:text-3xl md:text-4xl text-[var(--orange)] ">Dini & Rafly</h1>
+					<h3 class="text-md sm:text-lg lg:text-xl">Rabu, 06 November 2024</h3>
+				</div>
+				<div class="w-56 md:w-72 m-auto text-center my-2 h-1/1 px-3 rounded-[10px] bg-[var(--whiteTransparan)]  flex flex-col justify-center items-center md:text-lg shadow-sm relative z-20">
+					<h5>kepada Yth.</h5>
+					<h5>Bpk/Ibu/Saudara/i</h5>
+					<h4 id="tamuUndangan" class="my-1 text-md font-bold"><!-- nama tamu undangan --></h4>
+					<h5>di Tempat</h5>
+				</div>
+				<div class="">
+					<button id="sambutanClick" class="bg-[var(--green)] w-[180px] inline-block m-auto flex justify-center font-semibold hover:bg-[var(--orange)] hover:text-[var(--white)] items-center py-1 px-5 rounded-2xl inline-block mt-4 transition-all shadow-sm relative z-20">Buka Undangan</button>
+				</div>
+				
+			</div>
+		</div>
+		<div id="duaSambutan" class="hidden"> <!--  -->
+			<audio id="myAudio" autoplay>
+				<source src="image/Perfect.mp3" type="audio/mpeg">
+				<!-- Your browser does not support the audio element. -->
+			</audio>
+			<div class="fixed sm:bottom-[50px] sm:right-[50px] bottom-[50px] right-[10px] z-[9999] transition-all " onclick="toggleAudio()"><ion-icon class="text-[35px] lg:text-[40px] text-slate-900 backdrop-blur-md animate-pulse" name="pause-circle-outline"></ion-icon></div>
+			<div id="calenderStory" class="shadow-top acara flex flex-wrap justify-center items-center flex-col bg-gradient-to-b from-[var(--green)] via-[var(--green)] via-60% to-white to-100%  gap-2 h-1/1 h-[100vh] bg-no-repeat bg-cover relative">
+				<div class="">
+					<ul class="flex justify-center items-center gap-5 flex-row sm:flex-col fixed bottom-[20px] shadow-sm bg-back inset-x-0 sm:top-0 sm:right-2 sm:left-[auto] sm:bottom-[10%]">
+						<li class="md:bg-[var(--whiteTransparan)] bg-[var(--blackTransparan)] backdrop-blur-md rounded-lg flex justify-center items-center ">
+							<a class="py-1 transition-all px-2 lg:hover:text-white lg:hover:bg-[var(--orange)] rounded-lg transition-all" href="#calenderStory"><ion-icon class="text-[25px]" name="calendar-outline"></ion-icon></a>
+						</li>
+						<li class="md:bg-[var(--whiteTransparan)] bg-[var(--blackTransparan)] backdrop-blur-md rounded-lg flex justify-center items-center">
+							<a class="py-1 transition-all px-2 lg:hover:text-white lg:hover:bg-[var(--orange)] rounded-lg" href="#loveStory"><ion-icon class="text-[25px]" name="heart-circle-outline"></ion-icon></a>
+						</li>
+						
+						<li class="md:bg-[var(--whiteTransparan)] bg-[var(--blackTransparan)] backdrop-blur-md rounded-lg flex justify-center items-center">
+							<a class="py-1 transition-all px-2 lg:hover:text-white lg:hover:bg-[var(--orange)] rounded-lg " href="#mapsStory"><ion-icon class="text-[25px]" name="location-outline"></ion-icon></a>
+						</li>
+						<li class="md:bg-[var(--whiteTransparan)] bg-[var(--blackTransparan)] backdrop-blur-md rounded-lg flex justify-center items-center">
+							<a class="py-1 transition-all px-2 lg:hover:text-white lg:hover:bg-[var(--orange)] rounded-lg " href="#inviteStory"><ion-icon class="text-[25px]" name="mail-outline"></ion-icon></a>
+						</li>
+					</ul>
+				</div>
+				<div  class="">
+					<div class="w-[15%] md:w-[10%] absolute left-[4%] top-[25%] sm:left-[15%] sm:top-[22%] md:left-[20%] md:top-[20%] lg:left-[31%]">
+						<img src="image/cover-flower-2.png" width="100%" alt="">
+					</div>
+					<div class="w-[15%] md:w-[10%] absolute right-[4%] bottom-[25%] sm:right-[15%] sm:bottom-[22%] md:right-[20%] md:bottom-[20%] lg:right-[31%] lg:bottom-[22%] rotate-[180deg] ">
+						<img src="image/cover-flower-2.png" width="100%" alt="">
+					</div>
+				</div>
+				<div class="flex flex-wrap justify-center text-center items-center flex-col gap-5 h-1/1">
+					<h4 class="text-lg font-light md:text-2xl sm:text-xl">We are getting married</h4>
+					<h1 class="custom-font text-2xl sm:text-3xl md:text-4xl text-[var(--orange)] ">Dini & Rafly</h1>
+					<h3 class="text-md sm:text-lg lg:text-xl">Rabu, 06 November 2024</h3>
+				</div>
+				<div class="flex flex-wrap justify-center items-center flex-col">
+					<h4 class="text-md sm:text-lg lg:text-xl"> - Save the date - </h4>
+					<div class="simply-countdown flex justify-center items-center flex-wrap"></div>
+					<h4 class="text-md custom-font mt-3 md:text-xl"> - D & R  - </h4>
+				</div>
+			</div>
+			<div id="loveStory" class="bg-[var(--white)] lg:h-[100vh] flex flex-wrap justify-center items-center flex-col gap-2 text-center p-10">
+				<div class="flex items-center justify-center flex-col flex-wrap gap-5 md:gap-5 md:gap-12 poppins-regular">
+					<h3 class="custom-font text-lg sm:text-xl md:text-2xl lg:text-3xl">Mempelai</h3>
+					<div class="text-md lg:text-lg max-w-xl">
+						<h4 class="lg:hidden">Zariyat 51:49</h4>
+						<h4 class="text-sm lg:hidden">dan segala sesuatu ciptakan berpasang-pasangan supaya kamu mengingat kebesaran Allah.</h4>
+						<h4 class="hidden lg:block">Ar-Rum 30:21</h4>
+						<h4 class="text-sm hidden lg:block">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</h4>
+					</div>
+				</div>
+				<div class="flex flex-col justify-center items-center gap-8 md:flex-row md:gap-24 lg:26 my-5">
+					<div class="flex flex-col items-center justify-center text-center gap-2 text-md md:text-xl ">
+						<h3 class="custom-font ">Ahmad Rafly</h3>
+						<h5 class="font-light">Putra dari</h5>
+						<div class="flex justify-center items-center flex-col gap-[0px]">
+							<h4 class="font-bold">Bapak Huddina</h4>
+							<h4 class="font-bold">&</h4>
+							<h4 class="font-bold">Ibu Hj. Suriani</h4>
+						</div>
+						<h3 class="font-light mt-3">Mamuju</h3>
+					</div>
+					<div class="flex flex-col items-center justify-center text-center gap-1 text-md md:text-xl">
+						<h3 class="custom-font ">Diah Harianti</h3>
+						<h5 class="font-light">Putri dari</h5>
+						<div class="flex justify-center items-center flex-col gap-[0px]">
+							<h4 class="font-bold">Bapak Heri Sumantri Rasman (Alm.)</h4>
+							<h4 class="font-bold">&</h4>
+							<h4 class="font-bold">Ibu Sitti Arfa Haji Maming</h4>
+						</div>
+						<h3 class="font-light mt-3">Mamuju</h3>
+					</div>
+					
+				</div>
+	
+			</div>
+			
+			<div id="mapsStory" class="flex h-[100vh] justify-center items-center flex-col  gap-5 p-5 bg-gradient-to-b from-[var(--white)] via-[var(--green)] via-60% to-[var(--green)] to-100%">  <!-- bg-gradient-to-b from-[var(--white)] via-[var(--green)] via-60% to-[var(--green)] to-100% -->
+				<div class="flex flex-wrap flex-col justify-center items-center shadow-lg">
+					<h3 class="custom-font text-lg sm:text-xl md:text-xl lg:text-2xl">Detail Acara</h3>
+					<div class="flex flex-col sm:flex-row flex-wrap justify-center text-sm md:text-md lg:text-lg items-center gap-1 md:gap-5 p-5">
+						<div class="flex justify-center items-center flex-wrap flex-col poppins-regular">
+							<h4 class="font-bold">Akad Nikah</h4>
+							<h5>Rabu, 06 November 2024</h5>
+							<h5>10:00 - Selesai</h5>
+						</div>		
+						<div class="flex justify-center items-center flex-wrap flex-col poppins-regular">
+							<h4 class="font-bold">Resepsi Nikah</h4>
+							<h5>Rabu, 06 November 2024</h5>
+							<h5>11:00 - 16:00 lanjut 19:30 - Selesai</h5>
+						</div>		
+					</div>
+					<div class=" flex flex-wrap justify-center items-center flex-col">
+						<div class="text-center poppins-regular font-reguler lg:w-[500px] sm:w-[400px] mb-3 text-xs md:text-sm lg:text-md"> <b>Alamat :</b> Jalan Poros Trans Sulawesi, Link. Pantaibatu (Depan Koramil Baras), Kel. Baras, Kec. Baras, Kab. Pasangkayu.</div>
+						<div class="flex justify-center items-center flex-wrap flex-col ">
+							<iframe class="h-[220px] sm:h-[260px] sm:w-[500px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1020921.476835451!2d119.08240238116521!3d-1.7419467432176838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8cf9e22a3c7189%3A0x8c9aeb73e24383f5!2sK-Link%20Baras!5e0!3m2!1sid!2sid!4v1726424295625!5m2!1sid!2sid" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<div class="flex justify-center items-center flex-wrap flex-col text-center">
+							</div>
+							<div class="p-4">
+								<a class="bg-[var(--white)] text-[var(--black)] w-[120px] inline-block m-auto flex justify-center font-semibold hover:bg-[var(--orange)] hover:text-[var(--white)] items-center py-1 px-5 rounded-2xl inline-block mt-4 transition-all shadow-sm" target="_blank" href="https://maps.app.goo.gl/YWNxgRcCusngn2ax8">Buka Maps</a>
+							</div>	
+						</div>
+							
+									
+					</div>
+				</div>
+				
+			</div>
+	
+			<div id="inviteStory" class="bg-[white] h-[80vh] flex items-center justify-center flex-wrap flex-col gap-2 p-5 poppins-regular text-xs sm:text-md lg:text-[18px]">
+				<h3 class="custom-font text-lg sm:text-xl md:text-xl lg:text-2xl text-[var(--orange)]">Turut Mengundang</h3>
+				<div class="flex items-center flex-wrap sm:gap-8 p-5 gap-3 md:gap-5">
+					<div class="flex flex-wrap gap-3 md:gap-5 flex-col">
+						<h4><b class="uppercase">~ Abd. Rasyid TH, SH., M.A.P</b> (Camat Baras) </h4>
+						<h4><b class="uppercase">~ M. Akmal, SE</b> (Lurah Baras)</h4>
+						<h4><b class="uppercase">~ Usman A</b> (Kepala Link. Pantaibatu)</h4>
+						<h4><b class="uppercase">~ Kisman H</b> (Imam Masjid Taqwa Pantaibatu)</h4>
+					</div>
+					<div class="flex flex-wrap gap-3 md:gap-5 flex-col">
+						<h4><b class="uppercase">~ Amir</b> (Purn. POLRI) </h4>
+						<h4><b class="uppercase">~ Ahmad HM</b></h4>
+						<h4><b class="uppercase">~ Muhriadin</b> (Staf UPTD Samsat)</h4>
+						<h4><b class="uppercase">~ Syukri N, S.E</b></h4>
+					</div>
+				</div>
+			</div>
+			<div class="w-[100%] h-[60px] bg-[var(--green)] text-slate-800 flex justify-center items-center">
+				<h2>Website with mkeyzxi</h2>
+			</div>
+		</div>
+
+	</div>
+	<script>
+		simplyCountdown('.simply-countdown', {
+			year: 2024, // required
+			month: 11, // required
+			day: 6, // required
+			hours: 10, // Default is 0 [0-23] integer
+			words: { //words displayed into the countdown
+				days: { singular: 'hari', plural: 'hari' },
+				hours: { singular: 'jam', plural: 'jam' },
+				minutes: { singular: 'menit', plural: 'menit' },
+				seconds: { singular: 'detik', plural: 'detik' }
+			},
+		})
+	</script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="JS/script.js"></script>
+</body>
+
+</html>
