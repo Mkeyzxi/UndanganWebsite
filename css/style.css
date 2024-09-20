@@ -6,6 +6,9 @@
 	--black: #2D2F2E;
 	--orange: #EDC821;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 .custom-font {
 	font-family: 'Playwrite CU', sans-serif;
