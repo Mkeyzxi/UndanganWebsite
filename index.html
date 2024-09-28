@@ -68,8 +68,8 @@
 			</div>
 		</div>
 		<div id="duaSambutan" class="hidden"> <!--  -->
-			<audio id="myAudio" autoplay>
-				<source src="image/Perfect.mp3" type="audio/mpeg">
+			<audio id="myAudio" autoplay preload="auto" src="image/Perfect.mp3" type="audio/mpeg">
+				<!-- <source > -->
 				<!-- Your browser does not support the audio element. -->
 			</audio>
 			<div class="fixed sm:bottom-[50px] sm:right-[50px] bottom-[50px] right-[15px] z-[9999] transition-all " onclick="toggleAudio()"><ion-icon class="text-[35px] lg:text-[40px] text-slate-900 backdrop-blur-md animate-pulse" name="pause-circle-outline"></ion-icon></div>
@@ -195,7 +195,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-[100%] h-[60px] bg-[var(--green)] text-slate-800 flex justify-center items-center">
+			<div class="w-[100%] h-[200px] bg-[var(--green)] text-slate-900 flex justify-center items-center text-md">
 				<h2>Website with mkeyzxi</h2>
 			</div>
 		</div>
@@ -229,7 +229,7 @@
 		gsap.from('.elastic2', {duration:1, y:-50, opacity: 0, ease: 'elastic'})
 		gsap.from('.steps', {duration:1, y:200, opacity: 0, ease: 'steps(5)'})
 	</script>
-	<script src="JS/script.js"></script>
+	<script src="JS/script.js" defer></script>
 </body>
 
 </html>
