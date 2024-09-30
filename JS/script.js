@@ -57,10 +57,10 @@ const updateNavigation = (activeIndex) => {
 
 const undangan = function (){
 	const urlParams = new URLSearchParams(window.location.search);
-	const namaUndangan = urlParams.get('namaUndangan');
+	const invited = urlParams.get('invited');
 	let tamuUndangan = document.getElementById('tamuUndangan');
 
-	tamuUndangan.innerHTML = namaUndangan;
+	tamuUndangan.innerHTML = invited;
 }
 
 
